@@ -7,3 +7,11 @@
  */
 
 const MONKEYS = ["🐒", "🦍", "🦧"];
+
+export const feedMonkeys = (fruit) => {
+  const monkeys = MONKEYS.map((monkey) => {
+    const feedMonkeys = `${monkey} ${fruit}`;
+    return feedMonkeys;
+  });
+  return monkeys;
+};
