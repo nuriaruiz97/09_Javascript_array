@@ -2,13 +2,13 @@ import { getLongWords } from "./getLongWords";
 
 describe("Given getLongWords function", () => {
   test("when reciving LANGUAGES array, should return : ['JavaScript', 'TypeScript']", () => {
-    // arrange 
+    // arrange
     const WORDS = ["Java", "C++", "JavaScript", "C#", "TypeScript"];
 
-    // act 
+    // act
     const EXPECTED_RESULT = getLongWords(WORDS);
 
-    // assert 
+    // assert
     expect(EXPECTED_RESULT).toBeDefined();
     expect(EXPECTED_RESULT).toEqual(["JavaScript", "TypeScript"]);
   });

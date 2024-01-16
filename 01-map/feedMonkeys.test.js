@@ -1,4 +1,4 @@
-import {feedMonkeys} from "./feedMonkeys.js";
+import { feedMonkeys } from "./feedMonkeys.js";
 describe("Given feedMonkeys", () => {
   test("when 🍌 is provided as argument Then exècted array should be returned ", () => {
     const fruit = "🍌";
