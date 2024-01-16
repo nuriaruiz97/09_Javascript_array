@@ -9,6 +9,6 @@ describe("Given capitalizeMates function", () => {
     const EXPECT_RESULT = capitalizeMates(MATES);
 
     //assert
-    expect(EXPECT_RESULT).toEqual(["JOHN", "JACOB", "JINGLEHEIMER", "SCHMIDT"]);
+    expect(EXPECT_RESULT).toEqual(["John", "Jacob", "Jingleheimer", "Schmidt"]);
   });
 });

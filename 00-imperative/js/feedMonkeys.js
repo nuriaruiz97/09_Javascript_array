@@ -15,6 +15,7 @@ const feedMonkeys = function (fruit) {
 
   for (let index = 0; index < collectionlength; index++) {
     const monkey = `${MONKEYS[index]} ${fruit}`;
+
     monkeys.push(monkey);
   }
 
