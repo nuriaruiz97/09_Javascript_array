@@ -13,7 +13,7 @@ export const sumNumbersFromInitialValue = (NUMBER) => {
 
   for (let index = 0; index < NUMBERS.length; index++) {
     const sum = NUMBERS[index] + NUMBER;
-    
+
     numbers.push(sum);
   }
 

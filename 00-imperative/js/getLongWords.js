@@ -14,7 +14,6 @@ export const getLongWords = (paraules) => {
 
   for (let index = 0; index < paraules.length; index++) {
     if (paraules[index].length >= 5) {
-      
       longWords.push(paraules[index]);
     }
   }
