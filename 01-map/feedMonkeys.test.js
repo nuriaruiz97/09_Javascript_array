@@ -1,4 +1,4 @@
-import feedMonkeys from "./feedMonkeys.js";
+import { feedMonkeys } from "./feedMonkeys.js";
 describe("Given feedMonkeys", () => {
   test("when 🍌 is provided as argument Then exècted array should be returned ", () => {
     const fruit = "🍌";
@@ -14,7 +14,6 @@ describe("Given feedMonkeys", () => {
     const EXPECTED_RESULT = ["🐒 🍎", "🦍 🍎", "🦧 🍎"];
 
     const monkeys = feedMonkeys(fruit);
-
     expect(monkeys).toBeDefined();
     expect(monkeys).toEqual(EXPECTED_RESULT);
   });
