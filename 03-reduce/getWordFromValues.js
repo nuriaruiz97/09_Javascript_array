@@ -6,11 +6,22 @@
 
 const VALUES = [1, 2, 3];
 
-export const getWordFromValues = (values) => {
-  const stringNumbers = values.reduce((accumulated, actualValue) => {
-    return accumulated + actualValue.toString();
-  }, "");
+// export const getWordFromValues = (values) => {
+//   const stringNumbers = values.reduce((accumulated, actualValue) => {
+//     return accumulated + actualValue.toString();
+//   }, "");
 
-  return stringNumbers;
+//   return stringNumbers;
+// };
+// console.log(getWordFromValues(VALUES));
+export const getWordFromValues = (values) => {
+  const initialWord = "";
+
+  const toWord = (partialWord, value) => {
+    return `${partialWord}${value}`;
+  };
+
+  const word = values.reduce(toWord, initialWord);
+
+  return word;
 };
-console.log(getWordFromValues(VALUES));

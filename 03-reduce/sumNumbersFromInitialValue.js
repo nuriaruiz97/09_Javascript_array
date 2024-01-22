@@ -9,21 +9,5 @@
 const NUMBERS = [1, 2, 3, 4, 5];
 
 export const sumNumbersFromInitialValue = (initialValue, numbers) => {
-  let sum = initialValue;
-
-  for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
-  }
-
-  return sum;
+  return numbers.reduce((sum, number) => sum + number, initialValue);
 };
-console.log(sumNumbersFromInitialValue(0, NUMBERS));
-
-// export const sumNumbersFromInitialValue = (NUMBERS) => {
-//   const sum = NUMBERS.reduce((accumulated, actualValue) => {
-//     return accumulated + actualValue;
-//   }, NUMBERS);
-
-//   return sum;
-// };
-// console.log(sumNumbersFromInitialValue(NUMBERS));

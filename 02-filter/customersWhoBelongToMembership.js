@@ -28,5 +28,5 @@ const CUSTOMERS = [
 ];
 
 export const customersWhoBelongToMembership = (customers) => {
-  return customers.filter((customer) => customer.member === true);
+  return customers.filter((customer) => customer.member);
 };

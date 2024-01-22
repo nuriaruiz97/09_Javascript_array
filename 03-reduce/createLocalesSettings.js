@@ -17,7 +17,7 @@ export const createLocalesSettings = (LOCALES) => {
   const localesSettings = LOCALES.reduce((accumulated, actualValue, index) => {
     const localeSettings = {
       id: index,
-      enabled: index === 0 ? true : false,
+      enabled: index === 0,
     };
 
     accumulated[actualValue] = localeSettings;
