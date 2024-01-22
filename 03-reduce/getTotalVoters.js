@@ -18,3 +18,17 @@ const VOTERS = [
   { name: "Jeff", age: 30, voted: true },
   { name: "Zack", age: 19, voted: false },
 ];
+
+export const getTotalVoters = (VOTERS) => {
+  const totalVoters = VOTERS.reduce((accumulated, actualValue) => {
+    const { voted } = actualValue;
+
+    if (voted) {
+      accumulated++;
+    }
+
+    return accumulated;
+  }, 0);
+
+  return totalVoters;
+};
