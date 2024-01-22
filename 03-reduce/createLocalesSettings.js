@@ -12,3 +12,18 @@
  */
 
 const LOCALES = ["EN", "US", "EN", "EN", "EN"];
+
+export const createLocalesSettings = (LOCALES) => {
+  const localesSettings = LOCALES.reduce((accumulated, actualValue, index) => {
+    const localeSettings = {
+      id: index,
+      enabled: index === 0 ? true : false,
+    };
+
+    accumulated[actualValue] = localeSettings;
+
+    return accumulated;
+  }, {});
+
+  return localesSettings;
+};
