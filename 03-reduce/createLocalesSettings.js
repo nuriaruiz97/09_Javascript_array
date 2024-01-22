@@ -11,4 +11,4 @@
  * }
  */
 
-const LOCALES = ["EN", "GR", "FR", "IT", "PT"];
+const LOCALES = ["EN", "US", "EN", "EN", "EN"];

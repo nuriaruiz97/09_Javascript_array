@@ -1,7 +1,7 @@
 import { extractVipsNames } from "./extractVipsNames";
 
 describe("Given extractVipsNames function", () => {
-  test("Given vips array, should return an array of vips names", () => {
+  test("when given vips array, should return an array of vips names", () => {
     const VIPS = [
       {
         name: "Foo",
